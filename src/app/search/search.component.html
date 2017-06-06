@@ -1,6 +1,7 @@
 <form action="">
   <input type="text" #comapanyId [(ngModel)]='numberInput' name='numberInput'>
-  <button type='submit' (click)='update.emit({data: numberInput})'>
+  <button type='submit' (click)='checkValidity(numberInput)'>
     Pobierz dane
   </button>
+  <div class="error">Nie znaleziono danych</div>
 </form>

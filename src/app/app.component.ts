@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  someString: string;
+  passData: string;
   update(data) {
-    this.someString = data;
+    this.passData = data;
+    if (this.passData.length > 0) {
+      
+    }
   }
 }

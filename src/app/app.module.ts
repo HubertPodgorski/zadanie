@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HttpService } from 'app/shared/http.service';
 import { SearchHistoryComponent } from './search-history/search-history.component';
 import { SearchComponent } from './search/search.component';
+import { SearchService } from 'app/search/search.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchComponent } from './search/search.component';
     HttpModule
   ],
   providers: [
-    HttpService
+    HttpService,
+    SearchService
   ],
   bootstrap: [AppComponent]
 })
