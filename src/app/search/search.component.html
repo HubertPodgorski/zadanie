@@ -1,6 +1,6 @@
 <form action="">
-  <input type="text" #comapanyId>
-  <button type='submit'>
+  <input type="text" #comapanyId [(ngModel)]='numberInput' name='numberInput'>
+  <button type='submit' (click)='update.emit({data: numberInput})'>
     Pobierz dane
   </button>
 </form>

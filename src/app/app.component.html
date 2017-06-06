@@ -1,2 +1,2 @@
-<app-search></app-search>
-<app-search-history [searchData]='"searchData"'></app-search-history>
+<app-search (update)='update($event.data)'></app-search>
+<app-search-history [searchData]='someString'></app-search-history>
